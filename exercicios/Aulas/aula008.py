@@ -8,4 +8,4 @@ num = random.randint(1,10)
 print(num)
 
 import emoji
-print(emoji.emojize('ola, mundo!:sunglasses:', language='alias'))
+print(emoji.emojize('ola, mundo! :sunglasses:', language='alias'))
