@@ -1,6 +1,6 @@
 '''from math import trunc
 num = float(input('Digite um número '))
-print('o valor {} tem a parte inteira {}'.format(num, trunc(num)))'''
+print('O valor {} inteiro é {} '.format(num, num(trunc())))'''
 
 num = float(input('Digite um número'))
-print('o valor {} tem a parte inteira {}'.format(num, int(num)))
+print('O valor {} inteiro é {} '.format(num, int(num)))
