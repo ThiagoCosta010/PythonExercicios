@@ -1,3 +1,2 @@
-nome = str(input('Digite um nome '))
-achar = nome.find('SANTO')
-print('')
+cid = str(input('Digite a sua cidade ')).strip()
+print(cid[:5].upper() == 'SANTO')
