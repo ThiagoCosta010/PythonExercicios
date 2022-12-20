@@ -1,2 +1,2 @@
-cid = str(input('Digite a sua cidade ')).strip()
+cid = str(input('Qual cidade você nasce ? ')).strip()
 print(cid[:5].upper() == 'SANTO')
