@@ -1,6 +1,6 @@
-velocidade = float(input('Qual a velocidade do carro ? '))
-if velocidade <= 80:
-    print('Não multado')
+v = float(input('Digite a velocidade do carro '))
+if v <= 80:
+    print('Diriga com cuidado')
 else:
-    multa = (velocidade-80) * 7
-    print('Multado, deve pegar uma multa de R${:.2f}'.format(multa))
+    multa = (v-80) * 7
+    print('Multado! Excedeu o limite permitido que é de 80km/h \n Pagara uma multa de {}'.format(multa))

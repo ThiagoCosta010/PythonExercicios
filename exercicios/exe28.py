@@ -1,10 +1,11 @@
 from random import randint
 from time import sleep
-n1 = randint(0,5)
+num = randint(0, 5)
+print('-=-' * 20)
 chute = int(input('Digite um número entre 0 e 5 '))
 print('PROCESSANDO...')
 sleep(2)
-if chute == n1:
-    print('Acertou')
+if chute == num:
+    print('Você ganhou!!')
 else:
-    print('errou, era {}'.format(n1))
+    print('Você errou, o número era {}'.format(num))
