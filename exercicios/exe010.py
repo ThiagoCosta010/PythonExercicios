@@ -1,2 +1,2 @@
-num = int(input('Digite quanto dinheiro você tem ? R$'))
-print('\033[35;47m Você pode comprar {:.3f} US$ dolares \033[m' .format(num/3.27))
+num = float(input('Quanto dinheiro você tem na carteira ? R$'))
+print('Com R${} você pode comprar U${:.2f}'.format(num, num/3.27))
