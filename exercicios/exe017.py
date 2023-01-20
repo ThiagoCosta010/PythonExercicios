@@ -1,5 +1,5 @@
 import math
-co = float(input('cateto oposto '))
-ca = float(input('cateto adjacente'))
-hi = math.hypot(co, ca)
-print('o valor da hipotenusa {:.2f}'.format(hi))
+co = float(input('Valor do cateto oposto '))
+ca = float(input('Valor do cateto adjacente '))
+hipo = math.hypot(co, ca)
+print('O valor da hipotenusa é {:.2f}'.format(hipo))
