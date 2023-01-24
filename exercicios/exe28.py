@@ -1,11 +1,10 @@
 from random import randint
 from time import sleep
-num = randint(0, 5)
-print('-=-' * 20)
-chute = int(input('Digite um número entre 0 e 5 '))
+computador = randint(0, 5)
+num = int(input('Em que número eu pensei ? '))
 print('PROCESSANDO...')
 sleep(2)
-if chute == num:
-    print('Você ganhou!!')
+if num == computador:
+    print('Parabéns, você acertou')
 else:
-    print('Você errou, o número era {}'.format(num))
+    print('Errou, eu pensei no {}'.format(computador))
