@@ -1,9 +1,10 @@
 nota1 = float(input('Digite a nota 1 '))
 nota2 = float(input('Digite a nota 2 '))
 media = (nota1 + nota2) / 2
-if media < 5:
-    print('Com as notas {} e {} sua média é {}, você está REPROVADO'.format(nota1, nota2, media))
-elif media >= 5 and media < 7:
-    print('Com as notas {} e {} sua média é {}, você está em RECUPERAÇÃO'.format(nota1, nota2, media))
+print('Tirando {} e {}, a média do aluno é {}'.format(nota1, nota2, media))
+if media >= 7:
+    print('o aluno está aprovado')
+elif 7 > media >= 5:
+    print('o aluno está em recuperação')
 else:
-    print('Com as notas {} e {} sua média é {}, você está APROVADO'.format(nota1, nota2, media))
+    print('o aluno está reprovado')
