@@ -1,39 +1,38 @@
 from random import randint
 from time import sleep
-itens = ('Pedra','Papel','Tesoura')
-computador = randint(0,2)
-print('''Sua opções: 
-[0] PEDRA
-[1] PAPEL
-[2] TESOURA 
-''')
-jogador = int(input('Qual a sua escolha? '))
-sleep(1)
+itens = ['pedra','papel','tesoura']
+computador = randint(0, 2)
+jogador = int(input('''Faça sua escolha 
+[0] Pedra
+[1] Papel
+[2] Tesoura
+'''))
 print('JO')
 sleep(1)
 print('KEN')
 sleep(1)
 print('PO')
-print('O computor jogou {} '.format(itens[computador]))
-print('o jogador jogou {} '.format(itens[jogador]))
-if jogador == 0 : # PEDRA
+print('o computador jogou {}'.format(itens[computador]))
+print('o jogador jogou {}'.format(itens[jogador]))
+if jogador == 0: # Pedra
     if computador == 0:
-        print('EMPATE')
+        print('Empate!')
     elif computador == 1:
         print('Computador ganhou')
-    elif computador == 2:
-        print('Jogador jogou')
-elif jogador == 1: # PAPEL
+    else:
+        print('O jogador ganhou')
+elif jogador == 1: # Papel
     if computador == 0:
-        print('jogador ganhou')
+        print('O jogador ganhou')
     elif computador == 1:
-        print('EMPATE')
-    elif computador == 2:
-        print('computador ganhou')
-else: # TESOURA
+        print('Empate!')
+    else:
+        print('Computador ganhou')
+else: #Tesoura
     if computador == 0:
-        print('computador ganhou')
+        print('Computador ganhou')
     elif computador == 1:
-        print('jogador ganhou')
-    elif computador == 2:
-        print('EMPATE')
+        print('O jogador ganhou')
+    else:
+        print('Empate!')
+
