@@ -4,10 +4,10 @@ maioridadehomem = 0
 nomevelho = ''
 totmulher20 = 0
 for p in range(1, 5):
-    print('-----{}º PESSOA ------'.format(p))
+    print('----- {}ª PESSOA -----'.format(p))
     nome = str(input('Nome: ')).strip()
     idade = int(input('Idade: '))
-    sexo = str(input('Sexo [M/F]: ')).strip()
+    sexo = str(input('[M/F]: ')).strip()
     somaidade += idade
     if p == 1 and sexo in 'Mm':
         maioridadehomem = idade
@@ -18,6 +18,6 @@ for p in range(1, 5):
     if sexo in 'Ff' and idade > 20:
         totmulher20 += 1
 mediadeidade = somaidade / 4
-print('A média de idade do grupo {} anos'.format(mediadeidade))
-print('O homem mais velho tem {} anos e se chama {}'.format(maioridadehomem, nomevelho))
-print('Ao todo são {} mulheres com menos de 20 anos.'.format(totmulher20))
+print('a media de idade do grupo é de {} anos'.format(mediadeidade))
+print('O homem mais velho do grupo tem {} anos e se chama {}'.format(maioridadehomem, nomevelho))
+print('Ao todo são {} mulheres com menos de 20 anos'.format(totmulher20))
