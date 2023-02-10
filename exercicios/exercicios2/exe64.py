@@ -1,7 +1,7 @@
-num = cont = soma = 0
-num = float(input('Digite um número [999 para parar]'))
+soma = cont = num = 0
+num = float(input('Digite um número [999 para parar]: '))
 while num != 999:
     soma += num
-    num = float(input('Digite um número [999 para parar]'))
     cont += 1
-print('Você digitou {} números e a soma é: {} '.format(cont, soma))
+    num = float(input('Digite um número [999 para parar]: '))
+print('Você digitou {} números e a soma entre eles foi {}'.format(cont, soma))
