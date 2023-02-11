@@ -1,9 +1,10 @@
 opcao = 's'
 soma = quant = media = maior = menor = 0
 while opcao not in 'Nn':
-    num = int(input('Digite um número: '))
-    soma += num
+    num = float(input('Digite um número: '))
+    opcao = str(input('Quer continuar ? [S/N]')).strip().upper()[0]
     quant += 1
+    soma += num
     if quant == 1:
         maior = menor = num
     else:
@@ -11,7 +12,6 @@ while opcao not in 'Nn':
             maior = num
         if num < menor:
             menor = num
-    opcao = str(input('Quer continuar [S/N]?')).upper().split()[0]
 media = soma / quant
 print('Você digitou {} números e a média foi {}'.format(quant, media))
-print('O maior foi {} e o menor foi {}'.format(maior, menor))
+print('O maior valor foi {} e o menor foi {}'.format(maior, menor))
