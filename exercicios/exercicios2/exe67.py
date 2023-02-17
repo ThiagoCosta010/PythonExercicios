@@ -1,9 +1,10 @@
-tabu = int(input('Quer ver a tabuada de qual valor ? '))
-c = 1
-while tabu > 0:
-    print(f'{tabu} X {c} = {tabu*c}')
-    c += 1
-    if c == 11:
-        c = 1
-        tabu = int(input('Quer ver a tabuada de qual valor ? '))
-print('fim')
+
+while True:
+    n = int(input('Quer ver a tabuada de qual valor ? '))
+    if n < 0:
+        break
+    print('-' * 30)
+    for c in range(1, 11):
+        print(f'{n} X {c} = {n*c}')
+    print('-' * 30)
+print('programa tabuada encerrado')

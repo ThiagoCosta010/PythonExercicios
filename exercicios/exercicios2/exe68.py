@@ -1,24 +1,26 @@
 from random import randint
 print('VAMOS JOGAR PAR OU IMPAR')
-cont = venceu = 0
-while cont <= 3:
-    computador = randint(0, 11)
-    valor = int(input('Diga um valor'))
-    parImpar = str(input('Par ou ímpar? [P/I] ')).strip().upper()[0]
-    cont += 1
-    print(f'Você jogou {valor} e o computador {computador}')
-    soma = valor + computador
-    if soma % 2 == 0:
-        print('DEU PAR')
-        if parImpar == 'P':
-            print('Você venceu')
-            venceu += 1
+v = 0
+while True:
+    jogador = int(input('Diga um valor '))
+    computador = randint(0, 10)
+    total = jogador + computador
+    tipo = ' '
+    while tipo not in 'PI':
+        tipo = str(input('Par ou impar? [P/I] ')).strip().upper()[0]
+    print(f'Você jogou {jogador} e o computador {computador}. Total de {total}')
+    if tipo == 'P':
+        if total % 2 == 0:
+            print('Você venceu!')
+            v += 1
+        else:
+            print('Você perdeu!')
+            break
+    elif tipo == 'I':
+        if total % 2 == 1:
+            print('Você venceu!')
+            v += 1
         else:
             print('Você perdeu')
-    else:
-        print('DEU IMPAR')
-        if parImpar == 'I':
-            print('Você venceu')
-        else:
-            print('Você perdeu')
-print(f'Você ganhou um total de {venceu} rodadas')
+            break
+print(f'Você ganhou um total de {v} rodadas')
