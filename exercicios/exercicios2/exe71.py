@@ -1,11 +1,22 @@
-valor50 = valor10 = 0
+valor = float(input('Que valor você quer sacar ? '))
+total = valor
+ced = 50
+totalced = 0
 while True:
-    sacar = float(input('Que valor você quer sacar ? '))
-    if sacar >= 50:
-        valor50 = sacar / 50
-        if sacar >= 10:
-            valor10 = sacar / valor50
-    if sacar == 0:
-        break
-print(f'Total de {valor50} cédulas de R$50')
-print(f'Total de {valor10} cédulas de R$10')
+    if total >= ced:
+        total -= ced
+        totalced += 1
+    else:
+        if totalced > 0:
+            print(f'Total de {totalced} cédulas de R${ced}')
+        if ced == 50:
+            ced = 20
+        elif ced == 20:
+            ced = 10
+        elif ced == 10:
+            ced = 1
+        totalced = 0
+        if total == 0:
+            break
+print('=' * 30)
+print('Volte sempre ao banco')
