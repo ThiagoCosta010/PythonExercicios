@@ -6,4 +6,3 @@ for p in palavras:
     for vogal in p:
         if vogal.lower() in 'aeiou':
             print(vogal, end=' ')
-            
