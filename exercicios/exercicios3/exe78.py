@@ -9,9 +9,8 @@ for posicao, v in enumerate(valores):
         maior.append(posicao)
     if v == min(valores):
         menor.append(posicao)
-print(f'O mais valor foi {max(valores)} na posição {maior}')
-print(f'O mais valor foi {min(valores)} na posição {menor}')
-
+print(f'O maior valor foi {max(valores)} na posição {maior}')
+print(f'O maior valor foi {min(valores)} na posição {menor}')
 #for c in range(0, 5):
 #    valores.append(int(input(f'Digite um valor na posição {c}: ')))
 #    if c == 0:
