@@ -8,8 +8,7 @@ for simb in expr:
             pilha.pop()
         else:
             pilha.append(')')
-            break
 if len(pilha) == 0:
-    print('Sua expressão está válida!')
+    print('Sua expressão está correta!')
 else:
     print('Sua expressão está errada!')
