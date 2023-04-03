@@ -4,13 +4,14 @@ menor = []
 for c in range(0, 5):
     valores.append(int(input(f'Digite um valor na posição {c}: ')))
 
-for posicao, v in enumerate(valores):
+for pos, v in enumerate(valores):
     if v == max(valores):
-        maior.append(posicao)
+        maior.append(pos)
     if v == min(valores):
-        menor.append(posicao)
-print(f'O maior valor foi {max(valores)} na posição {maior}')
-print(f'O maior valor foi {min(valores)} na posição {menor}')
+        menor.append(pos)
+print(f'O menor valor foi {min(valores)} na posição {menor}')
+print(f'O menor valor foi {max(valores)} na posição {maior}')
+
 #for c in range(0, 5):
 #    valores.append(int(input(f'Digite um valor na posição {c}: ')))
 #    if c == 0:
