@@ -5,9 +5,9 @@ while True:
         numeros.append(n)
         print('Valor adicionado com sucesso')
     else:
-        print('Valor duplicado! Não vou adicionar')
-    r = str(input('Quer continuar ? [S/N] ')).strip().upper()
-    if r in 'N':
+        print('Valor duplicado ! não vou adicionar')
+    resp = str(input('Quer continuar: [S/N] ? ')).strip().upper()[0]
+    if resp in 'N':
         break
 numeros.sort()
-print(f'Os valores adicionados foram {numeros}')
+print(f'Você digitou os valores {numeros}')
