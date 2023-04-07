@@ -1,14 +1,15 @@
 valores = []
+posicaoDoCinco = []
 while True:
     valores.append(int(input('Digite um valor: ')))
-    resp = str(input('Quer continuar ? [S/N]')).strip().upper()[0]
+    resp = str(input('Quer continuar ? [S/N] ')).strip().upper()[0]
     if resp in 'N':
         break
-print(f'Você digitou {len(valores)}')
+print(f'Você digitou {len(valores)} elementos')
 valores.sort()
 valores.reverse()
 print(f'Os valores em ordem decrescente são {valores}')
 if 5 in valores:
-    print('O valor 5 foi encontrado na lista')
+    print('O valor 5 faz parte da lista!')
 else:
-    print('O valor 5 não foi encontrado na lista')
+    print('O valor 5 não faz parte da lista')
